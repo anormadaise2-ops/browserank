@@ -1,0 +1,13 @@
+﻿pages:
+  stage: deploy
+  script:
+    - mkdir -p public
+    - cp index.html style.css script.js robots.txt sitemap.xml site.webmanifest public/
+    - cp -r assets public/
+  pages:
+    publish: public
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
