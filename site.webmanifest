@@ -1,0 +1,10 @@
+{
+  "name": "BrowserRank",
+  "short_name": "BrowserRank",
+  "description": "Comparateur de navigateurs web, confidentialité et anonymat",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0b0c12",
+  "theme_color": "#0b0c12",
+  "lang": "fr"
+}

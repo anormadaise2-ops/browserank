@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0c12">
+  <title>BrowserRank — Classement des meilleurs navigateurs</title>
+  <meta name="description" content="Comparez les meilleurs navigateurs web : confidentialité, anonymat, vitesse, extensions, consommation de ressources et points forts.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://VOTRE-DOMAINE.example/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"BrowserRank",
+    "url":"https://VOTRE-DOMAINE.example/",
+    "description":"Comparateur indépendant de navigateurs web, confidentialité et anonymat."
+  }
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="BrowserRank accueil"><span class="brand-mark">B</span><span>Browser<span class="brand-accent">Rank</span></span></a>
+    <nav aria-label="Navigation principale">
+      <a href="#classement">Classement</a>
+      <a href="#criteres">Nos critères</a>
+      <a href="#guide-anonymat">Anonymat</a>
+    </nav>
+    <a class="header-cta" href="#classement">Voir le top 10 <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> GUIDE INDÉPENDANT · ÉDITION 2026</div>
+        <h1>Le bon navigateur.<br><span>Selon vos priorités.</span></h1>
+        <p class="hero-text">Confidentialité, anonymat, vitesse ou simplicité : comparez les navigateurs populaires et trouvez celui qui correspond vraiment à votre usage.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#classement">Explorer le classement <span>↓</span></a>
+          <a class="button secondary" href="#guide-anonymat">Comprendre l’anonymat</a>
+        </div>
+        <div class="hero-note"><span class="shield">✓</span> Critères expliqués · Liens officiels · Pas de classement sponsorisé déclaré</div>
+      </div>
+      <div class="hero-visual" aria-label="Illustration abstraite d'un navigateur et de la confidentialité">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="glow"></div>
+        <div class="browser-window">
+          <div class="window-top"><i></i><i></i><i></i><div class="address"><span>⌕</span> Recherche privée…</div></div>
+          <div class="window-content">
+            <div class="mini-logo">B</div>
+            <div class="fake-line long"></div><div class="fake-line medium"></div>
+            <div class="privacy-chip"><span>◈</span><div><b>Votre vie privée compte</b><small>Comparez avant de choisir</small></div><span class="check">✓</span></div>
+            <div class="fake-cards"><span></span><span></span><span></span></div>
+          </div>
+        </div>
+        <div class="floating-badge badge-privacy"><span>◈</span><div><b>Confidentialité</b><small>À comparer</small></div></div>
+        <div class="floating-badge badge-speed"><span>↯</span><div><b>Vitesse</b><small>Selon votre usage</small></div></div>
+        <div class="hero-caption">CHOISIR EN CONNAISSANCE DE CAUSE</div>
+      </div>
+    </section>
+
+    <section class="stats-strip" aria-label="Résumé du site">
+      <div><strong>10</strong><span>navigateurs comparés</span></div>
+      <div><strong>5</strong><span>critères de lecture</span></div>
+      <div><strong>0</strong><span>garantie d’anonymat absolu</span></div>
+      <div class="strip-note">Les notes sont éditoriales et indicatives, pas des benchmarks de laboratoire.</div>
+    </section>
+
+    <section class="section" id="classement">
+      <div class="section-heading">
+        <div><div class="eyebrow">LE COMPARATIF</div><h2>Le classement des navigateurs</h2><p>Filtrez selon ce qui compte le plus pour vous.</p></div>
+        <div class="controls">
+          <label class="search-box"><span>⌕</span><input id="search" type="search" placeholder="Rechercher un navigateur…" aria-label="Rechercher un navigateur"></label>
+          <select id="filter" aria-label="Filtrer par priorité">
+            <option value="all">Toutes les priorités</option>
+            <option value="privacy">Confidentialité</option>
+            <option value="anonymity">Anonymat</option>
+            <option value="speed">Vitesse</option>
+            <option value="light">Légèreté</option>
+            <option value="custom">Personnalisation</option>
+          </select>
+        </div>
+      </div>
+      <div class="ranking-label"><span>RANG & NAVIGATEUR</span><span>POINT FORT</span><span>NOTE INDICATIVE</span><span>LIEN OFFICIEL</span></div>
+      <div id="browser-list" class="browser-list" aria-live="polite"></div>
+      <p class="disclaimer">À savoir : il n’existe pas de navigateur parfait. Les résultats varient selon l’appareil, les réglages, les extensions et les sites visités. Les notes représentent une appréciation éditoriale simplifiée.</p>
+    </section>
+
+    <section class="section criteria-section" id="criteres">
+      <div class="section-heading">
+        <div><div class="eyebrow">COMMENT LIRE LES NOTES</div><h2>Les critères qui comptent</h2><p>Une note ne remplace pas l’explication : voici ce qu’elle signifie.</p></div>
+      </div>
+      <div class="criteria-grid">
+        <article class="criterion"><div class="criterion-icon violet">◈</div><h3>Confidentialité</h3><p>Blocage des traqueurs, protections anti-pistage et contrôle des données. Cela ne rend pas invisible sur Internet.</p></article>
+        <article class="criterion"><div class="criterion-icon blue">◎</div><h3>Anonymat</h3><p>Capacité à réduire le lien entre votre navigation et votre identité. Tor Browser est conçu spécifiquement pour renforcer l’anonymat.</p></article>
+        <article class="criterion"><div class="criterion-icon green">↯</div><h3>Vitesse</h3><p>Ressenti général et optimisation du navigateur. Les performances dépendent aussi du PC, du réseau et des pages web.</p></article>
+        <article class="criterion"><div class="criterion-icon orange">▱</div><h3>Légèreté</h3><p>Impact potentiel sur les ressources. La consommation de RAM varie avec les onglets, extensions et sites ouverts.</p></article>
+        <article class="criterion"><div class="criterion-icon pink">✳</div><h3>Personnalisation</h3><p>Extensions, thèmes, réglages et fonctions permettant d’adapter le navigateur à vos besoins.</p></article>
+        <article class="criterion"><div class="criterion-icon yellow">✓</div><h3>Transparence</h3><p>Privilégiez les politiques de confidentialité compréhensibles, les réglages accessibles et les projets dont le fonctionnement est documenté.</p></article>
+      </div>
+    </section>
+
+    <section class="privacy-section" id="guide-anonymat">
+      <div class="privacy-visual"><div class="privacy-ring"><span>◈</span></div><div class="privacy-dot dot-one"></div><div class="privacy-dot dot-two"></div><div class="privacy-dot dot-three"></div></div>
+      <div class="privacy-copy">
+        <div class="eyebrow">CONFIDENTIALITÉ ≠ ANONYMAT</div>
+        <h2>Vous voulez être plus anonyme ?</h2>
+        <p>Bloquer les publicités et les traqueurs améliore souvent la confidentialité, mais ne masque pas à lui seul votre adresse IP et ne garantit pas l’anonymat.</p>
+        <div class="privacy-recommendation"><span class="tor-symbol">T</span><div><b>Pour l’anonymat : Tor Browser</b><p>Il fait transiter le trafic compatible par le réseau Tor et réduit certains moyens de suivi. Ne vous connectez pas à vos comptes personnels si votre objectif est de séparer cette activité de votre identité.</p><a href="https://www.torproject.org/download/" target="_blank" rel="noopener noreferrer">Télécharger depuis le site officiel ↗</a></div></div>
+        <div class="privacy-recommendation"><span class="brave-symbol">B</span><div><b>Pour un usage quotidien : Brave ou Firefox bien réglé</b><p>Ils proposent des protections contre plusieurs formes de suivi. Le niveau de protection dépend des paramètres et des extensions installées.</p><a href="https://brave.com/" target="_blank" rel="noopener noreferrer">Brave ↗</a> <a href="https://www.mozilla.org/firefox/" target="_blank" rel="noopener noreferrer">Firefox ↗</a></div></div>
+        <p class="small-warning">Aucun navigateur ne protège contre tous les risques : les sites peuvent vous reconnaître par vos comptes, vos habitudes ou certaines caractéristiques de votre appareil.</p>
+      </div>
+    </section>
+
+    <section class="section faq-section">
+      <div class="section-heading"><div><div class="eyebrow">QUESTIONS FRÉQUENTES</div><h2>Avant de choisir</h2></div></div>
+      <details><summary>Quel navigateur choisir pour être anonyme ?</summary><p>Tor Browser est conçu pour renforcer l’anonymat sur le Web. Utilisez-le depuis son site officiel, gardez ses réglages par défaut et évitez les extensions supplémentaires ou les connexions à des comptes qui vous identifient.</p></details>
+      <details><summary>Brave rend-il totalement anonyme ?</summary><p>Non. Brave bloque de nombreux traqueurs et publicités, mais cela ne masque pas automatiquement votre adresse IP et ne garantit pas que votre activité soit impossible à relier à vous.</p></details>
+      <details><summary>Quel navigateur consomme le moins de RAM ?</summary><p>Il n’y a pas de vainqueur universel : la consommation varie énormément selon le nombre d’onglets, les extensions et les sites. Pour comparer, testez les mêmes pages avec les mêmes réglages sur votre appareil.</p></details>
+      <details><summary>Comment ce classement est-il établi ?</summary><p>Les notes de cette version sont des évaluations éditoriales indicatives basées sur les fonctions connues et les usages visés, pas des mesures instrumentées. Le site n’affirme pas avoir effectué de tests de laboratoire.</p></details>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand" href="./"><span class="brand-mark">B</span><span>Browser<span class="brand-accent">Rank</span></span></a>
+    <p>Un guide indépendant pour mieux choisir son navigateur.</p>
+    <div class="footer-links"><a href="#criteres">Méthodologie</a><a href="#guide-anonymat">Anonymat</a><a href="robots.txt">Robots.txt</a><a href="sitemap.xml">Sitemap</a></div>
+    <small>© <span id="year"></span> BrowserRank. Les marques et logos appartiennent à leurs propriétaires respectifs.</small>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
